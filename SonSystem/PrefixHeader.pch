@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  SonSystem
+//
+//  Created by 浮云漫步 on 16/6/26.
+//  Copyright © 2016年 iphone. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XMGExtension.h"
+
+#endif 

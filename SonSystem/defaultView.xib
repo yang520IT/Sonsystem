@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="defaultView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-m2-zMh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAD-gc-QEI">
+                    <rect key="frame" x="0.0" y="667" width="375" height="75"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJx-QP-ofq" customClass="Logou">
+                            <rect key="frame" x="15" y="4" width="46" height="46"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="FSy-8l-v1w"/>
+                                <constraint firstAttribute="width" constant="46" id="wdH-bC-UXQ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="子系统" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-7p-MAn">
+                            <rect key="frame" x="71" y="4" width="51" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="bbI-rc-t5R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一片不一样的天空！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trs-u5-dF2">
+                            <rect key="frame" x="71" y="29" width="117" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="osA-Ys-KSc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Trs-u5-dF2" firstAttribute="leading" secondItem="oJx-QP-ofq" secondAttribute="trailing" constant="10" id="5Lu-zw-mmD"/>
+                        <constraint firstItem="Gue-7p-MAn" firstAttribute="top" secondItem="oJx-QP-ofq" secondAttribute="top" id="BHE-9T-2zQ"/>
+                        <constraint firstItem="Trs-u5-dF2" firstAttribute="bottom" secondItem="oJx-QP-ofq" secondAttribute="bottom" id="DGH-af-cqY"/>
+                        <constraint firstAttribute="height" constant="75" id="EDC-S4-7sU"/>
+                        <constraint firstItem="Gue-7p-MAn" firstAttribute="leading" secondItem="oJx-QP-ofq" secondAttribute="trailing" constant="10" id="vXh-ZF-MfC"/>
+                        <constraint firstItem="oJx-QP-ofq" firstAttribute="leading" secondItem="RAD-gc-QEI" secondAttribute="leading" constant="15" id="ved-UK-od2"/>
+                        <constraint firstAttribute="bottom" secondItem="oJx-QP-ofq" secondAttribute="bottom" constant="25" id="yga-Dk-0Zs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RAD-gc-QEI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2CC-ry-rwX"/>
+                <constraint firstAttribute="trailing" secondItem="RAD-gc-QEI" secondAttribute="trailing" id="2jE-bd-5p4"/>
+                <constraint firstAttribute="trailing" secondItem="hXu-m2-zMh" secondAttribute="trailing" id="5aw-Sr-lxf"/>
+                <constraint firstAttribute="bottom" secondItem="RAD-gc-QEI" secondAttribute="bottom" constant="-75" id="9An-JN-bqq"/>
+                <constraint firstItem="hXu-m2-zMh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CFL-KP-y9s"/>
+                <constraint firstAttribute="bottom" secondItem="hXu-m2-zMh" secondAttribute="bottom" id="aag-x0-ceN"/>
+                <constraint firstItem="hXu-m2-zMh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cd3-56-Hnd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="buttonLayout" destination="9An-JN-bqq" id="Z8W-ry-1AL"/>
+            </connections>
+            <point key="canvasLocation" x="159.5" y="285.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="375" height="667"/>
+    </resources>
+</document>
